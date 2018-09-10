@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>输入框</title>
+</head>
+<body>
+<!--单选框-->
+<label><input type="radio" name="sex" checked>男</label>
+<label><input type="radio" name="sex">女</label>
+<!--复选框-->
+<label><input type="checkbox" name="city" checked>北京</label>
+<label><input type="checkbox" name="city">商丘</label>
+<!--下拉框-->
+<select name="language">
+    <option value="c" selected>中文</option>
+    <option value="e" >英文</option>
+    <option value="f">法文</option>
+</select><br><br>
+<!--multiple 多选-->
+<select name="city" multiple>
+    <option value="1">北京</option>
+    <option value="2" >商丘</option>
+    <option value="3">郑州</option>
+</select><br>
+<!--optgroup 分组-->
+<select name="city">
+    <optgroup label="一行城市"></optgroup>
+    <option value="1">北京</option>
+    <option value="2" >商丘</option>
+    <option value="3">郑州</option>
+    <optgroup label="二行城市"></optgroup>
+    <option value="1">北京</option>
+    <option value="2" >商丘</option>
+    <option value="3">郑州</option>
+</select><br>
+<!--多行文本框-->
+<textarea cols="5" rows="4">我是一个文本框。</textarea><br>
+<!--文件上传-->
+<input type="file">
+</body>
+</html>
