@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        div {
+            width: 200px;
+            height: 200px;
+        }
+        .box1 {
+            background: red;
+            position: absolute;
+            left: 100px;
+            top: 100px;
+            z-index: 1;
+        }
+        .son {
+            width: 20px;
+            height: 20px;
+            background: blue;
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+        }
+        .box2 {
+            background: pink;
+            position: absolute;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+<!--绝对定位脱标，父标签是否拥有定位，有的以最近定位标签为参考点，否则以页面参考点,只有定位了的元素，才能有z-index值-->
+<div class="box1">
+    <div class="son"></div>
+</div>
+<div class="box2"></div>
+</body>
+</html>

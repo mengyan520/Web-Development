@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>浮动导航案例</title>
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        .box {
+            width: 600px;
+
+            margin: 0 auto;
+        }
+        .nav-top {
+            height: 150px;
+            background: url("../image/banner1.jpg") no-repeat left;
+        }
+        .nav-bot {
+            margin-top: 5px;
+            height: 32px;
+            background: url("../image/nav_bg.jpg") left;
+            line-height: 32px;
+        }
+        .nav-bot ul li {
+            list-style: none;
+            float: left;
+        }
+        .nav-bot ul li  a {
+            display: inline-block;
+            text-align: center;
+            height: 32px;
+            width: 80px;
+            line-height: 32px;
+            text-decoration: none;
+            background: url("../image/a_bg.jpg");
+        }
+        .nav-bot ul li  a:hover {
+
+            background: url("../image/button2.jpg");
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="nav-top"></div>
+    <div class="nav-bot">
+        <ul>
+            <li><a href="#">首页导航</a></li>
+            <li><a href="#">首页导航</a></li>
+            <li><a href="#">首页导航</a></li>
+            <li><a href="#">首页导航</a></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

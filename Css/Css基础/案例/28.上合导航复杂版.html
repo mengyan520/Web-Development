@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>上合导航</title>
+    <style type="text/css">
+        html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; }
+        fieldset, img,input,button { border:none; padding:0;margin:0;outline-style:none; }
+        ul, ol { list-style:none; }
+        input { padding-top:0; padding-bottom:0; font-family: "SimSun","宋体";}
+        select, input { vertical-align:middle; }
+        select, input, textarea { font-size:12px; margin:0; }
+        textarea { resize:none; }
+        img {border:0;	vertical-align:middle;}
+        table { border-collapse:collapse; }
+        body {
+            font:12px/150% Arial,Verdana,"\5b8b\4f53";
+            color:#666;
+            background:#fff
+        }
+        .clearfix:before,.clearfix:after{
+            content:"";
+            display:table;
+        }
+        .clearfix:after{clear:both;}
+        .clearfix{
+            *zoom:1;/*IE/7/6*/
+        }
+        a{color:#666; text-decoration:none; }
+        a:hover{color:#C81623;}
+        h1,h2,h3,h4,h5,h6{text-decoration:none;font-weight:normal;}
+        s,i,em{font-style:normal;text-decoration:none;}
+        .col-red{color: #C81623!important;}
+        /*公共类*/
+        .fl {
+            float:left
+        }
+        .fr {
+            float:right
+        }
+        .al {
+            text-align:left
+        }
+        .ac {
+            text-align:center
+        }
+        .ar {
+            text-align:right
+        }
+        .hide {
+            display:none
+        }
+        .header {
+            width: 980px;
+            height: 39px;
+            margin: 20px auto 0;
+        }
+        .logo{
+            width: 179px;
+            height: 39px;
+        }
+        .header .search {
+            /*width: 195px;*/
+            height: 30px;
+            border:1px solid #ECECEC;
+        }
+        .search input[type = "text"] {
+            width: 165px;
+            height: 30px;
+        }
+        .search input[type="button"] {
+            width: 30px;
+            height: 30px;
+            background: url("../image/上合/search2.jpg");
+        }
+        .nav {
+            height: 55px;
+            border-top: 1px solid #d1d1d1;
+            background: url("../image/上合/nav_bg.png");
+        }
+        .nav-con {
+            width: 980px;
+            height: 55px;
+            margin: 0 auto;
+        }
+        .nav-con ul li {
+            background: url("../image/上合/nav_bg-line.png") no-repeat right;
+        }
+        .nav-con ul li a {
+            display: inline-block;
+            height: 55px;
+            font: 700 12px/55px 宋体;
+            padding: 0 30px;
+        }
+        .nav-con ul li a:hover {
+            color: #7cb609;
+        }
+        .banner {
+            width: 980px;
+            height: 597px;
+            margin: 0 auto;
+        }
+        .meg {
+            height: 32px;
+            background: #FBFBFB;
+            border-top: 1px solid #EFEFEF;
+            border-bottom: 1px solid #EFEFEF;
+        }
+        .meg-con {
+            width: 980px;
+            height: 32px;
+            margin: 0 auto;
+        }
+        .meg-con .meg-con-l,.meg-con-r {
+            line-height: 32px;
+        }
+        .news {
+            width: 980px;
+            margin: 15px auto;
+        }
+        .new-left,.new-cen,.new-right {
+            border: 1px solid #e4e4e4;
+            height: 224px;
+            position: relative;
+        }
+        .new-left {
+            width: 310px;
+        }
+        .new-cen {
+            width: 373px;
+            margin-left: 12px;
+        }
+        .new-right {
+            width: 268px;
+        }
+        .pro {
+            background: url("../image/上合/o.jpg") no-repeat left;
+            padding-left: 20px;
+            position: absolute;
+            left: 10px;
+            top: 15px;
+            color:#7AB800;
+        }
+        .new-left .pro-pic {
+            position: absolute;
+            left:55px;
+            top:45px;
+        }
+        .new-left .arrow-l,.arrow-r {
+            position: absolute;
+            bottom: 90px;
+        }
+        .new-left .arrow-l {
+            left: 23px;
+        }
+        .new-left .arrow-r {
+            right: 23px;
+        }
+        .new-cen ul {
+            margin:40px 17px 0;
+        }
+        .new-cen ul li {
+            height: 27px;
+            line-height: 27px;
+            border-bottom: 1px dashed #DCDCDC;
+        }
+        .new-cen ul li a.sorry {
+            color: red;
+        }
+        .new-right ul {
+            margin:40px 17px 0;
+        }
+        .new-right ul li {
+            height: 12px;
+            line-height: 12px;
+            border-left: 3px solid #7AB800;
+            margin-bottom: 10px;
+            padding-left: 5px;
+        }
+        .new-right p{
+            margin-left:17px;
+            /*line-height: 18px;*/
+        }
+        .footer {
+            height: 280px;
+            background: #2d2d2d;
+            border-bottom: 1px dashed #414141;
+        }
+        .footer .footer-con {
+            width: 980px;
+            margin: 0 auto;
+        }
+        .footer-con dl {
+            float: left;
+            margin-top: 20px;
+            margin-right: 40px;
+        }
+        .footer-con dl dt {
+            color:#c0c0c0;
+        }
+        .footer-con dl dd{
+            color:#707070;
+            margin-top: 20px;
+        }
+        .bot{
+            background: #2D2D2D;
+            height: 54px;
+            text-align: center;
+            padding-top:30px;
+        }
+
+    </style>
+</head>
+<body>
+<!--header开始-->
+<div class="header">
+    <div class="logo fl"><img src="../image/上合/logo.jpg" alt=""></div>
+    <div class="search fr">
+        <input type="text" value="请输入...">
+        <input type="button">
+    </div>
+</div>
+<!--header结束-->
+<!--nav开始-->
+<div class="nav">
+    <div class="nav-con">
+        <ul>
+            <li class="fl"><a href="#">首页</a></li>
+            <li class="fl"><a href="#">智能手机</a></li>
+            <li class="fl"><a href="#">平板电脑</a></li>
+            <li class="fl"><a href="#">配件</a></li>
+            <li class="fl"><a href="#">服务支持</a></li>
+            <li class="fl"><a href="#">关于尚合</a></li>
+        </ul>
+    </div>
+</div>
+<!--nav结束-->
+<!--banner开始-->
+<div class="banner">
+    <img src="../image/上合/banner.jpg" alt="">
+</div>
+<!--banner结束-->
+<!--信息开始-->
+<div class="meg">
+    <div class="meg-con">
+        <div class="meg-con-l fl">最新公告：尚合Aone智能手机入网证已获取工信部门审批下发。尚合官网</div>
+        <div class="meg-con-r fr">
+            <img src="../image/上合/zone.png" alt="">
+            <img src="../image/上合/xinlang.png" alt="">
+            <img src="../image/上合/weibo.png" alt="">
+            <img src="../image/上合/renren.png" alt="">
+        </div>
+    </div>
+</div>
+<!--信息结束-->
+<!--新闻开始-->
+<div class="news clearfix">
+    <div class="new-left fl">
+        <div class="pro">
+            新品发布
+        </div>
+        <div class="pro-pic"><img src="../image/上合/home_hot_01.png" alt=""></div>
+        <div class="arrow-l"><img src="../image/上合/left.png" alt=""></div>
+        <div class="arrow-r"><img src="../image/上合/right.png" alt=""></div>
+    </div>
+    <div class="new-cen fl">
+        <div class="pro">
+            新闻中心
+        </div>
+        <ul>
+            <li><a href="#" class="sorry">致歉公告</a></li>
+            <li><a href="#">首批尚合Aonet已全部售馨!</a></li>
+            <li><a href="#">【媒体报导】国产高性价比 尚合Aonet四核手机评测</a></li>
+            <li><a href="#">尚合Aone智能手机入网证已经获工信部门审批下发.</a></li>
+            <li><a href="#">我司通过ISO9001:2008国际质量管理体系认证</a></li>
+            <li><a href="#">我司产品已经通过了国家强制性产品3C认证</a></li>
+        </ul>
+    </div>
+    <div class="new-right fr">
+        <div class="pro">
+            技术与支持
+        </div>
+        <ul>
+            <li>售后服务</li>
+            <li>投诉与建议</li>
+            <li>联保网点</li>
+            <li>常见问题FAQ</li>
+        </ul>
+        <br>
+        <p>深圳市汇聚众合科技发展有限公司
+            服务热线：400-633-7922</p>
+    </div>
+</div>
+<!--新闻结束-->
+<!--尾部-->
+<div class="footer">
+    <div class="footer-con">
+        <dl>
+            <dt>尚合首页</dt>
+            <dd>返回首页</dd>
+        </dl>
+        <dl>
+            <dt>尚合首页</dt>
+            <dd>返回首页</dd>
+        </dl>
+        <dl>
+            <dt>尚合首页</dt>
+            <dd>返回首页</dd>
+        </dl>
+        <dl>
+            <dt>尚合首页</dt>
+            <dd>返回首页</dd>
+        </dl>
+
+    </div>
+</div>
+<div class="bot">
+    深圳市会居中和优先公司深圳市会居中和优先公司深圳市会居中和优先公司深圳市
+        会居中和优先公司深圳市会居中和优先公司深圳市会居中和优先公司
+</div>
+</body>
+</html>

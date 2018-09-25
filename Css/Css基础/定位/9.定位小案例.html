@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>定位小案例</title>
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        .nav {
+            height: 55px;
+            background: url("../image/head_bg.jpg");
+            margin-top: 20px;
+            border-top: 1px solid #6666;
+        }
+        .nav .box {
+            width: 1000px;
+            height: 55px;
+            margin: 0 auto;
+            position: relative;
+        }
+        .nav .new {
+            position: absolute;
+            left: 55px;
+            bottom: 40px;
+        }
+        .nav .box ul li {
+            list-style: none;
+            float: left;
+            background: url("../image/li_bg.png") no-repeat right;
+            padding: 0 30px;
+        }
+        .nav .box ul li a {
+            height: 55px;
+            font: 18px/55px 微软雅黑;
+            text-decoration: none;
+            color: #333333;
+        }
+        .nav .box ul li a:hover {
+            color: green;
+        }
+        /*不起作用，权重低*/
+        /*a:hover {*/
+        /*color: green;*/
+        /*}*/
+    </style>
+</head>
+<body>
+<div class="nav">
+    <div class="box">
+        <ul>
+            <li><a href="#">智能手机</a></li>
+            <li><a href="#">平板电脑</a></li>
+            <li><a href="#">百度</a></li>
+            <li><a href="#">么么哒</a></li>
+        </ul>
+        <div class="new"><img src="../image/new.png"></div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>外边距</title>
+    <style type="text/css">
+        .div1 {
+            width: 100px;
+            height: 200px;
+            background: green;
+            margin: 20px 40px;
+        }
+        .div2 {
+            width: 100px;
+            height: 200px;
+            background: gold;
+            margin: 100px 40px 0;
+        }
+        .div3 {
+            width: 100px;
+            height: 200px;
+            background: blue;
+            /*解决方法 1.加边距 2.设置overflow: hidden，会格式化上下文*/
+            /*border: 1px solid red;*/
+            /*overflow: hidden;*/
+        }
+        .div4 {
+            width: 40px;
+            height: 20px;
+            background: orange;
+            margin-top:40px;
+        }
+    </style>
+</head>
+<body>
+<div class="div1"></div>
+<!--垂直方向margin合并现象，已大的为主-->
+<div class="div2"></div>
+<!--如果父标签没有边框，而子标签设置了间距，会整体移动-->
+<div class="div3">
+    <div class="div4"></div>
+</div>
+</body>
+</html>

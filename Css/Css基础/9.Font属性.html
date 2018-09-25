@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        div {
+            font-style: italic;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 40px;
+            font-family: "Al Nile";
+        }
+        .div1 {
+            /* 用逗号，隔开备选字体，备选字体可以有无数个
+               行高可以用百分比，表示字号的百分之多少
+               12px/200%
+               等价于
+               12px/24px
+               字体和文字大小必写，其他可以省略
+            */
+            font: italic 700 12px/200% "氛围","宋体";
+        }
+    </style>
+</head>
+<body>
+<div class="div1">我是div</div>
+</body>
+</html>

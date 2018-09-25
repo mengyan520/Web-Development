@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>简单滑动门</title>
+    <style type="text/css">
+        ul li {
+            list-style: none;
+            float: left;
+        }
+        li a {
+            display: inline-block;
+            height: 35px;
+            text-decoration: none;
+            background: url("../image/bg_r1_c1.png") no-repeat;
+            padding-left: 7px;
+            color: white;
+        }
+        a span {
+            display: inline-block;
+            height: 35px;
+            line-height: 35px;
+            background: url("../image/bg_r1_c2.png") right;
+            padding-right: 24px;
+        }
+        li a:hover {
+            background: url("../image/bbg_r1_c1.png") no-repeat;
+        }
+        li a:hover span {
+            background: url("../image/bbg_r1_c2.png") right;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li><a href="#"><span>百度</span></a></li>
+    <li><a href="#"><span>百度一下</span></a></li>
+    <li><a href="#"><span>中国新闻网</span></a></li>
+</ul>
+</body>
+</html>

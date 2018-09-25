@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        .username {
+            /*去掉边框线*/
+            /*border: 0 none;*/
+            /*去掉轮廓线*/
+            outline-style: none;
+            border: 1px dashed green;
+            background: gray;
+        }
+        .username:focus {
+            background: red;
+        }
+    </style>
+</head>
+<body>
+<label>用户名&nbsp;&nbsp;<input type="text" class="username"></label>
+</body>
+</html>
